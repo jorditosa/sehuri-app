@@ -1,0 +1,7 @@
+{
+  "name": "sehuri",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
