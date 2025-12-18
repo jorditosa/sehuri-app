@@ -1,0 +1,101 @@
+.home-grid {
+  padding: 24px 16px;
+  min-height: 100%;
+}
+
+.home-card {
+  position: relative;
+  margin-top: 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.home-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: linear-gradient(90deg, 
+    var(--ion-color-primary), 
+    var(--ion-color-primary), 
+    var(--ion-color-secondary)
+  );
+}
+
+.home-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card-icon-wrapper {
+  position: absolute;
+  left: 50%;
+  z-index: 99;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 44px;
+  background: linear-gradient(135deg, 
+    var(--ion-color-primary), 
+    var(--ion-color-primary-shade)
+  );
+  border-radius: 0px 0px 25px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__home--icon {
+  color: var(--ion-color-secondary);
+}
+
+.card-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 42px;
+}
+
+.card-description {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.6;
+  margin: 12px 0 20px 0;
+}
+
+.card-features {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-grid {
+    padding: 16px 12px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .home-card {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .home-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  }
+}
