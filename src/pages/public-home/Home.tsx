@@ -14,33 +14,10 @@ const Home: React.FC = () => {
 
 
         <IonGrid className="home-grid">
-          <IonRow>
-            <IonCol size="12" sizeMd="8" sizeLg="6">
-              <IonCard color="primary" className="home-card" button routerLink="/manifesto">
-                <div className="card-icon-wrapper">
-                  <BookOpenText
-                    className='card__home--icon'
-                    size={32}
-                    strokeWidth={1.5}
-                  />
-                </div>
-                <IonCardHeader>
-                  <IonCardTitle className="card-title">
-                    Leer Manifesto
-                  </IonCardTitle>
-                </IonCardHeader>
-                <IonCardContent>
-                  <p className="card-description">
-                    Ciberseguridad es Derecho Humano
-                  </p>
-                </IonCardContent>
-              </IonCard>
-            </IonCol>
-          </IonRow>
 
           <IonRow className="ion-justify-content-center">
 
-            <IonCol size="6">
+            <IonCol size="12">
               <IonCard color="secondary" className="home-card" button routerLink="/tools/url-scanner">
                 <div className="card-icon-wrapper">
                   <Link2
@@ -62,7 +39,7 @@ const Home: React.FC = () => {
               </IonCard>
             </IonCol>
 
-            <IonCol size="6">
+            <IonCol size="12">
               <IonCard color="secondary" className="home-card" button routerLink="/tools/file-scanner">
                 <div className="card-icon-wrapper">
                   <File
@@ -78,13 +55,38 @@ const Home: React.FC = () => {
                 </IonCardHeader>
                 <IonCardContent>
                   <p className="card-description">
-                    Analiza la seguridad de cualquier enlace antes de visitarlo
+                    Analiza si un fichero contiene malware
                   </p>
                 </IonCardContent>
               </IonCard>
             </IonCol>
 
           </IonRow>
+
+           <IonRow>
+            <IonCol size="12" sizeMd="8" sizeLg="6">
+              <IonCard color="primary" className="home-card" button routerLink="/manifesto">
+                <div className="card-icon-wrapper">
+                  <BookOpenText
+                    className='card__home--icon'
+                    size={32}
+                    strokeWidth={1.5}
+                  />
+                </div>
+                <IonCardHeader>
+                  <IonCardTitle className="card-title">
+                    Leer Manifesto
+                  </IonCardTitle>
+                </IonCardHeader>
+                <IonCardContent>
+                  <p className="card-description">
+                    Ciberseguridad y Privacidad como Derechos Humanos
+                  </p>
+                </IonCardContent>
+              </IonCard>
+            </IonCol>
+          </IonRow>
+
         </IonGrid>
       </IonContent>
     </IonPage>
