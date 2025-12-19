@@ -71,3 +71,7 @@ body {
 	--ion-background-color: var(--ion-color-dark);
 	--ion-default-font: 'Fira Sans', 'sans-serif';
 }
+
+strong {
+	color: var(--ion-color-secondary);
+}

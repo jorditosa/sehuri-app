@@ -5,6 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:android": "ionic cap run android -l --local",
+    "dev:ios": "ionic cap run ios -l --local",
+    "sync:android:dev": "cp ./capacitor.config.android.ts ./capacitor.config.ts && ionic build -- --mode development && cap sync android",
+    "sync:android:prod": "cp ./capacitor.config.android.ts ./capacitor.config.ts && ionic build -- --mode production && cap sync android",
+    "sync:ios:dev": "cp ./capacitor.config.ios.ts ./capacitor.config.ts && ionic build -- --mode development && cap sync ios",
+    "sync:ios:prod": "cp ./capacitor.config.ios.ts ./capacitor.config.ts && ionic build -- --mode production && cap sync ios",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test.e2e": "cypress run",
@@ -12,10 +18,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@capacitor/android": "^8.0.0",
     "@capacitor/app": "8.0.0",
     "@capacitor/core": "8.0.0",
     "@capacitor/haptics": "8.0.0",
+    "@capacitor/ios": "^8.0.0",
     "@capacitor/keyboard": "8.0.0",
+    "@capacitor/preferences": "^8.0.0",
     "@capacitor/status-bar": "8.0.0",
     "@ionic/react": "^8.5.0",
     "@ionic/react-router": "^8.5.0",
@@ -30,6 +39,7 @@
     "react-router-dom": "^5.3.4"
   },
   "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
     "@capacitor/cli": "8.0.0",
     "@testing-library/dom": ">=7.21.4",
     "@testing-library/jest-dom": "^5.16.5",

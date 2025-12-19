@@ -1,0 +1,59 @@
+
+.onboarding-intro-card {
+  margin-bottom: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-content-md p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-bottom: 12px;
+}
+
+.onboarding-card {
+  height: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.onboarding-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card__onboarding--icon {
+  opacity: 0.9;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: 0;
+  opacity: 0.9;
+}
+
+.get-started-button {
+  --border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  height: 56px;
+}
