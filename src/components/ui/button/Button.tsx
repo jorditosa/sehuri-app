@@ -5,7 +5,7 @@ import './Button.css'
 interface Props {
   text: string;
   icon: LucideIcon;
-  onClick: () => void;
+  onClick?: () => void;
   color?: 'primary' | 'secondary' | 'tertiary' | 'success' | 'warning' | 'danger';
 }
 

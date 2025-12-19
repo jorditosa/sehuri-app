@@ -1,0 +1,18 @@
+ion-label {
+    display: block;
+    color: var(--ion-color-secondary) !important;
+    padding: 16px;
+}
+
+ion-item {
+    --color: var(--ion-color-primary);
+    --padding-start: 16px;
+    --padding-end: 16px;
+    border-radius: 25px;
+    --background: #f4f4f4;
+    height: 48px;
+}
+
+ion-card {
+    box-shadow: none;
+}
