@@ -31,14 +31,16 @@ import '@ionic/react/css/palettes/dark.always.css';
 import './theme/variables.css';
 import Routes from './routes/routes';
 import Header from './components/header/Header';
+import { IonReactRouter } from '@ionic/react-router';
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonApp>
-    <Header />
-    
-    <Routes />
+    <IonReactRouter>
+      <Header />
+      <Routes />
+    </IonReactRouter>
   </IonApp>
 );
 

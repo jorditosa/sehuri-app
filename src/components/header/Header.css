@@ -14,3 +14,8 @@
   width: 90px;
   padding: 12px;
 }
+
+.header-logo-wrapper {
+  background: transparent;
+  cursor: pointer;
+}

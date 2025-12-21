@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { IonReactRouter } from '@ionic/react-router';
 import { IonRouterOutlet } from '@ionic/react';
 import { Route, Redirect } from 'react-router-dom';
 import Home from '../pages/public-home/Home';
 import Manifesto from '../pages/manifesto/Manifesto';
-import UrlScanner from '../pages/tools/UrlScanner';
+import UrlScanner from '../pages/tools/url-scanner/UrlScanner';
 import OnBoarding from '../pages/onboarding/OnBoarding';
 import { checkStorageValue } from '../lib/preferences/storage-lib';
 
@@ -25,7 +24,6 @@ const Routes: React.FC = () => {
 
 
   return (
-    <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/onboarding">
           <OnBoarding />
@@ -47,7 +45,6 @@ const Routes: React.FC = () => {
           )}
         </Route>
       </IonRouterOutlet>
-    </IonReactRouter>
   );
 };
 

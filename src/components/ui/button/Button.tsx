@@ -7,6 +7,7 @@ interface Props {
   icon: LucideIcon;
   onClick?: () => void;
   color?: 'primary' | 'secondary' | 'tertiary' | 'success' | 'warning' | 'danger';
+  type?: "submit" | "reset" | "button" | undefined;
 }
 
 export default function Button({
@@ -14,9 +15,11 @@ export default function Button({
   icon: Icon,
   onClick,
   color = 'secondary',
+  type
 }: Props) {
   return (
     <IonButton
+      type={type}
       expand="block"
       color={color}
       className="button"
@@ -26,7 +29,7 @@ export default function Button({
         <span className="button-text">{text}</span>
         <Icon 
           className="button-icon" 
-          size={48} 
+          size={42} 
           strokeWidth={1.5} 
         />
       </span>

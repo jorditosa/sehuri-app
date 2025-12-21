@@ -8,16 +8,14 @@ const Home: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         <PageHeading
-          title="Hola!"
+          title=""
           icon={HomeIcon}
         />
 
-
         <IonGrid className="home-grid">
-
           <IonRow className="ion-justify-content-center">
 
-            <IonCol size="12">
+            <IonCol size="6">
               <IonCard color="secondary" className="home-card" button routerLink="/tools/url-scanner">
                 <div className="card-icon-wrapper">
                   <Link2
@@ -33,13 +31,13 @@ const Home: React.FC = () => {
                 </IonCardHeader>
                 <IonCardContent>
                   <p className="card-description">
-                    Analiza la seguridad de cualquier enlace antes de visitarlo
+                    Analiza si un enlace es seguro antes de visitarlo
                   </p>
                 </IonCardContent>
               </IonCard>
             </IonCol>
 
-            <IonCol size="12">
+            <IonCol size="6">
               <IonCard color="secondary" className="home-card" button routerLink="/tools/file-scanner">
                 <div className="card-icon-wrapper">
                   <File
