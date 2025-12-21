@@ -13,7 +13,7 @@ export default function PageHeading({
   title,
   subtitle,
   icon: Icon,
-  iconSize = 44,
+  iconSize = 42,
   iconStrokeWidth = 1.5
 }: Props) {
   return (
