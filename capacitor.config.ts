@@ -10,8 +10,12 @@ const config: CapacitorConfig = {
   plugins: {
     Keyboard: {
       resize: 'none'
+    },
+    SplashScreen : {
+      backgroundColor: "#60EFA4",
+      showSpinner: false
     }
-  }
+  },
 };
 
 export default config;
