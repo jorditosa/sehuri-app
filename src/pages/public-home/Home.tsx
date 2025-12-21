@@ -29,11 +29,6 @@ const Home: React.FC = () => {
                     Comprobar URL
                   </IonCardTitle>
                 </IonCardHeader>
-                <IonCardContent>
-                  <p className="card-description">
-                    Analiza si un enlace es seguro antes de visitarlo
-                  </p>
-                </IonCardContent>
               </IonCard>
             </IonCol>
 
@@ -51,11 +46,6 @@ const Home: React.FC = () => {
                     Comprobar Fichero
                   </IonCardTitle>
                 </IonCardHeader>
-                <IonCardContent>
-                  <p className="card-description">
-                    Analiza si un fichero contiene malware
-                  </p>
-                </IonCardContent>
               </IonCard>
             </IonCol>
 
