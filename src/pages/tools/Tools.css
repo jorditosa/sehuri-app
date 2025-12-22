@@ -16,3 +16,12 @@ ion-item {
 ion-card {
     box-shadow: none;
 }
+
+.ion-card-header {
+    margin-bottom: 24px;
+}
+
+.label-error {
+    color: var(--ion-color-danger) !important;
+    padding: 6px 16px;
+}

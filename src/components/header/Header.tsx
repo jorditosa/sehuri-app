@@ -26,7 +26,7 @@ export default function Header() {
               className="header__img"
             />
           </IonButton>
-          <Bell size={32} />
+          <Bell size={28} />
         </IonRow>
       </IonToolbar>
     </IonHeader>

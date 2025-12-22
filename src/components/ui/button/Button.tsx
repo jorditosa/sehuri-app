@@ -1,5 +1,5 @@
 import { IonButton } from '@ionic/react'
-import { LucideIcon } from 'lucide-react';
+import { LucideIcon, Loader } from 'lucide-react';
 import './Button.css'
 
 interface Props {
@@ -19,6 +19,9 @@ export default function Button({
   type,
   disabled = false
 }: Props) {
+  // Detectamos si el icon es Loader comparando la referencia del componente
+  const isLoader = Icon === Loader;
+
   return (
     <IonButton
       type={type}
@@ -31,7 +34,7 @@ export default function Button({
       <span className="button-content">
         <span className="button-text">{text}</span>
         <Icon 
-          className="button-icon" 
+          className={`button-icon ${isLoader ? 'spin' : ''}`} 
           size={42} 
           strokeWidth={1.5} 
         />
