@@ -1,6 +1,6 @@
 import { IonCard, IonCardHeader, IonCardTitle, IonCardContent, IonCol, IonContent, IonGrid, IonPage, IonRow } from '@ionic/react';
 import './Home.css';
-import { BookOpenText, File, HomeIcon, Link2 } from 'lucide-react';
+import { BookOpenText, BrainCircuit, File, HomeIcon, Link2, PersonStanding } from 'lucide-react';
 import PageHeading from '../../components/ui/page-heading/PageHeading';
 
 const Home: React.FC = () => {
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
                 </div>
                 <IonCardHeader>
                   <IonCardTitle className="card-title">
-                    Comprobar URL
+                    Comprobar URL y/o Dominio
                   </IonCardTitle>
                 </IonCardHeader>
               </IonCard>
@@ -49,9 +49,43 @@ const Home: React.FC = () => {
               </IonCard>
             </IonCol>
 
+            <IonCol size="6">
+              <IonCard color="secondary" className="home-card" button routerLink="/tools/file-scanner">
+                <div className="card-icon-wrapper">
+                  <PersonStanding
+                    className='card__home--icon'
+                    size={32}
+                    strokeWidth={1.5}
+                  />
+                </div>
+                <IonCardHeader>
+                  <IonCardTitle className="card-title">
+                    Protección Menores
+                  </IonCardTitle>
+                </IonCardHeader>
+              </IonCard>
+            </IonCol>
+
+            <IonCol size="6">
+              <IonCard color="tertiary" className="home-card" button routerLink="/tools/file-scanner">
+                <div className="card-icon-wrapper">
+                  <BrainCircuit
+                    className='card__home--icon'
+                    size={32}
+                    strokeWidth={1.5}
+                  />
+                </div>
+                <IonCardHeader>
+                  <IonCardTitle className="card-title">
+                    IA - Generador palabra clave
+                  </IonCardTitle>
+                </IonCardHeader>
+              </IonCard>
+            </IonCol>
+
           </IonRow>
 
-           <IonRow>
+          <IonRow>
             <IonCol size="12" sizeMd="8" sizeLg="6">
               <IonCard color="primary" className="home-card" button routerLink="/manifesto">
                 <div className="card-icon-wrapper">
@@ -68,7 +102,7 @@ const Home: React.FC = () => {
                 </IonCardHeader>
                 <IonCardContent>
                   <p className="card-description">
-                    Ciberseguridad y Privacidad como Derechos Humanos
+                    Ciberseguridad y Privacidad digitales como Derechos Humanos
                   </p>
                 </IonCardContent>
               </IonCard>

@@ -32,7 +32,7 @@ export default function UrlScanner() {
     <IonPage>
       <IonContent fullscreen>
         <PageHeading
-          title="Comprobar URL"
+          title="Comprobar URL y/o Dominio"
           icon={Link}
         />
         <IonGrid className="onboarding-grid">
