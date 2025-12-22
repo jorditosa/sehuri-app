@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">sehuri</string>
-    <string name="title_activity_main">sehuri</string>
+    <string name="app_name">Sehuri</string>
+    <string name="title_activity_main">Sehuri</string>
     <string name="package_name">com.seckat</string>
     <string name="custom_url_scheme">com.seckat</string>
 </resources>

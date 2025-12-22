@@ -8,6 +8,7 @@ interface Props {
   onClick?: () => void;
   color?: 'primary' | 'secondary' | 'tertiary' | 'success' | 'warning' | 'danger';
   type?: "submit" | "reset" | "button" | undefined;
+  disabled?: boolean;
 }
 
 export default function Button({
@@ -15,7 +16,8 @@ export default function Button({
   icon: Icon,
   onClick,
   color = 'secondary',
-  type
+  type,
+  disabled = false
 }: Props) {
   return (
     <IonButton
@@ -24,6 +26,7 @@ export default function Button({
       color={color}
       className="button"
       onClick={onClick}
+      disabled={disabled}
     >
       <span className="button-content">
         <span className="button-text">{text}</span>

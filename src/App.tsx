@@ -32,15 +32,21 @@ import './theme/variables.css';
 import Routes from './routes/routes';
 import Header from './components/header/Header';
 import { IonReactRouter } from '@ionic/react-router';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 setupIonicReact();
 
+// Create a client
+const queryClient = new QueryClient()
+
 const App: React.FC = () => (
   <IonApp>
-    <IonReactRouter>
-      <Header />
-      <Routes />
-    </IonReactRouter>
+    <QueryClientProvider client={queryClient}>
+      <IonReactRouter>
+        <Header />
+        <Routes />
+      </IonReactRouter>
+    </QueryClientProvider>
   </IonApp>
 );
 

@@ -14,8 +14,6 @@ const Routes: React.FC = () => {
   useEffect(() => {
     const loadSeenStatus = async () => {
       const seen = await checkStorageValue('hasSeenOnboarding');
-
-      // convert string → boolean if needed
       setHasSeenOnboarding(seen === 'true');
     };
 
