@@ -7,18 +7,18 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { UrlScannerI } from "./url-scanner.types";
 import { useMutation } from "@tanstack/react-query";
 import { scanURLAction } from "../../../actions/tools/url-scan";
-import { useHistory } from "react-router-dom";
+import { useToolURLScanner } from "../../../store/tool-url-scan.slice";
 
 export default function UrlScanner() {
-  const history = useHistory();
   const { register, handleSubmit } = useForm<UrlScannerI>();
-  const { mutate, isPending, data } = useMutation({
+  const { setScanResult } = useToolURLScanner();
+  const { mutate, isPending } = useMutation({
     mutationFn: scanURLAction,
     onError: (error) => {
       console.log(error.message)
     },
     onSuccess: (response) => {
-      console.log(data)
+      setScanResult(response)
       // history.push('/tools/url-scanner/result', { scanData: response });
     }
   })
