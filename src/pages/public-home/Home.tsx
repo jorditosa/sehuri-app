@@ -8,7 +8,7 @@ const Home: React.FC = () => {
     <IonPage>
       <IonContent fullscreen>
         <PageHeading
-          title=""
+          title="Tu espacio Digital"
           icon={HomeIcon}
         />
 

@@ -63,7 +63,7 @@ export default function UrlScanner() {
                         <IonItem lines="none">
                           <IonInput
                             placeholder="https://ejemplo.com"
-                            type="url"
+                            type="text"
                             {...register("url", { required: true })}
                           />
                         </IonItem>
@@ -75,7 +75,7 @@ export default function UrlScanner() {
                           disabled={isPending}
                         />
                         <IonText color="secondary">
-                          <p style={{ fontSize: '0.9em', margin: '8px 0 0 16px' }}>
+                          <p style={{ fontSize: '0.85em', margin: '8px 0 0 16px' }}>
                             Formatos aceptados: https://ejemplo.com o ejemplo.com
                           </p>
                         </IonText>

@@ -19,7 +19,7 @@ export default function OnBoarding() {
       <IonContent fullscreen>
         <PageHeading
           title="¡Bienvenido/a!"
-          subtitle="Seguridad y privacidad digital para todas las personas"
+          subtitle="Seguridad y privacidad digital a tu alcance"
           icon={Play}
         />
 
